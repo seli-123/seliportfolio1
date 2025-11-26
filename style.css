@@ -1,0 +1,41 @@
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(156, 163, 175, 0.5);
+  border-radius: 5px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(156, 163, 175, 0.8);
+}
+html {
+  scroll-behavior: smooth;
+}
+
+/* CSS Variables for Theming */
+:root {
+  --c-bg: #fff0f5;
+  --c-bg-grad: linear-gradient(135deg, #fff0f5 0%, #ffe4e1 100%);
+  --c-card: rgba(255, 255, 255, 0.95);
+  --c-text: #1a0f15;
+  --c-muted: #5c3a4b;
+  --c-accent: #c2185b;
+  --c-accent2: #e91e63;
+  --c-border: rgba(194, 24, 91, 0.3);
+}
+
+body {
+  background: var(--c-bg-grad);
+  color: var(--c-text);
+}
+
+.theme-text { color: var(--c-text); }
+.theme-text-muted { color: var(--c-muted); }
+.theme-text-accent { color: var(--c-accent); }
+.theme-bg-card { background-color: var(--c-card); }
+.theme-border { border-color: var(--c-border); }
+.theme-border-accent { border-color: var(--c-accent); }
